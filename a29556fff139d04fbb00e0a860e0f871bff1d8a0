@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af9208cf_1cda8b6b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28
+      },
+      "writtenOn": "2021-09-11T21:23:54Z",
+      "side": 1,
+      "message": "hey Bigbiff, can you please give me merge permissions on Gerrit for heart?",
+      "revId": "a29556fff139d04fbb00e0a860e0f871bff1d8a0",
+      "serverId": "9c1c7d72-6534-4d44-b0ea-39f63e804833"
+    }
+  ]
+}
