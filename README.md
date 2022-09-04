@@ -46,27 +46,20 @@ Works:
 
 ## Compile
 
-First checkout minimal twrp with omnirom tree:
+First checkout minimal twrp with AOSP tree:
 
 ```
-mkdir -p ~/android/twrp-11
-cd ~/android/twrp-11
-repo init -u git@github.com:minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
+mkdir -p ~/android/twrp-12.1
+cd ~/android/twrp-12.1
+repo init -u git@github.com:minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
 repo sync
 ```
 
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/lenovo/heart" name="TeamWin/android_device_lenovo_heart" remote="github" revision="android-11" />
+<project path="device/lenovo/heart" name="TeamWin/android_device_lenovo_heart" remote="github" revision="android-12.1" />
 ```
-
-You need also of this commit in /build:
-
-```
-https://gerrit.omnirom.org/#/c/android_build/+/36483/
-```
-
 
 Finally execute these:
 
@@ -74,7 +67,7 @@ Finally execute these:
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 export LC_ALL=C
-lunch twrp_heart-eng
+lunch twrp_zippo-eng
 make recoveryimage
 ```
 
@@ -86,7 +79,7 @@ fastboot boot out/target/product/heart/recovery.img
 
 ## Other Sources
 
-Kernel source: https://github.com/lenovo-sm8150/android_kernel_lenovo_sm8150/tree/twrp-11
+Kernel source: https://github.com/lenovo-sm8150/android_kernel_lenovo_sm8150/tree/twrp-12.1
 
 ## Thanks
 
